@@ -1,0 +1,236 @@
+.videoPlay {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    // padding: 0 1vw;
+    margin-bottom: 100px;
+  
+    svg {
+      position: absolute;
+    }
+  
+    @media (max-width: 1030px) {
+      flex-direction: column-reverse;
+      gap: 70px;
+      margin-left: 0px;
+    }
+  }
+  .videoPlay img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .seticon {
+    position: absolute;
+    top: 37%;
+    left: 23%;
+    color: white;
+  
+    @media (max-width: 1030px) {
+      top: 60%;
+      left: 45%;
+    }
+  
+    @media (max-width: 760px) {
+      top: 64%;
+      left: 40%;
+    }
+  
+    @media (max-width: 535px) {
+      top: 66%;
+    }
+  
+    @media (max-width: 450px) {
+      top: 70%;
+    }
+  
+    svg {
+      width: 110px;
+      height: 120px;
+    }
+  }
+  .videoPlayChild2 {
+    position: absolute;
+    background-color: #002a3e;
+    padding: 7%;
+    color: white;
+    border-radius: 15px;
+    top: 14%;
+    left: 50%;
+    font-family: Lora;
+  
+    h1 {
+      font-size: 36px;
+      color: white;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+    img {
+      margin-left: 400px;
+      margin-bottom: -60px;
+    }
+    span {
+      color: #b39359;
+    }
+  
+    @media (max-width: 1280px) {
+      padding: 50px 26px 50px 29px;
+      top: 9%;
+    }
+  
+    @media (max-width: 888px) and (min-width: 768px) {
+      h1 {
+        font-size: 26px;
+      }
+    }
+  
+    @media (max-width: 1030px) {
+      position: relative;
+      left: 0;
+      right: 0;
+    }
+  }
+  
+  @media (min-width: 1030px) {
+    .videoPlay {
+      flex-direction: row;
+    }
+  
+    .videoPlay img {
+      max-width: 60%;
+      margin-right: 2rem;
+    }
+  
+    .videoPlayChild2 {
+      margin-top: 0;
+    }
+  }
+
+  .main {
+    // padding: 8vw;
+    margin-top: 100px;
+  }
+  
+  .content1 {
+    background-color: #0b2c3d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 50px;
+    min-height: 330px;
+    border-radius: 8px;
+  
+    h2 {
+      font-size: 36px;
+      line-height: 1.5;
+    }
+  
+    p {
+      color: #b39359;
+    }
+  
+    @media (max-width: 1150px) and (min-width: 970px) {
+      padding-left: 5px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      min-height: 265px;
+    }
+  
+    @media (max-width: 970px) {
+      flex-direction: column;
+      height: auto;
+      padding: 1rem;
+      gap: 50px;
+    }
+  }
+  
+  .img {
+    flex: 1;
+    margin-right: -30px;
+    z-index: 2;
+    img {
+      min-width: 400px;
+      width: 500px;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-bottom: -120px;
+      margin-left: 30px;
+      @media (max-width: 970px) {
+        margin-bottom: 0px;
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+        margin-left: 0px;
+      }
+    }
+    @media (max-width: 970px) {
+      margin-right: 0px;
+    }
+  
+    svg {
+      color: white;
+      width: 80px;
+      height: 75px;
+      right: 33%;
+      margin-top: 80px;
+      position: absolute;
+      margin-top: -5em;
+      @media (max-width: 1200px) {
+        margin-top: -3em;
+      }
+  
+      @media (max-width: 970px) {
+        right: 47%;
+        margin-top: -12em;
+      }
+  
+      @media (max-width: 570px) {
+        margin-top: -31%;
+      }
+    }
+  }
+  
+  .content02 {
+    flex: 1;
+    padding: 10px 10px 10px 30px;
+    font-family: Lora;
+  }
+  
+  .dots {
+    margin-right: -25px;
+    margin-top: -240px;
+  
+    @media (max-width: 1150px) {
+      margin-top: -174px;
+    }
+  
+    @media (max-width: 970px) {
+      display: none;
+    }
+  }
+  
+  .pIcon {
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  .question{
+    margin-top: 30px;
+    span{
+      color: #b39359;
+      font-size: 20px;
+      font-family: Lora;
+    }
+    h1{
+      font-size: 28px;
+      font-weight: 500;
+      cursor: pointer;
+      font-family: Lora;
+    }
+  }

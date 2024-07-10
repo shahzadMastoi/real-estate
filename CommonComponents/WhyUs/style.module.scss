@@ -1,0 +1,147 @@
+.content {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  @media (max-width: 992px) {
+    flex-direction: column;
+    .content1{
+      width: 100%;
+    }
+    .content2{
+      width: 100%;
+    }
+  }
+  @media (max-width: 830px) {
+    flex-wrap: wrap;
+  }
+}
+
+.whyus {
+  margin-top: 3vw;
+  display: flex;
+  gap: 1vw;
+  font-family: Lora;
+  h3 {
+    font-size: 32px;
+  }
+  p{
+    line-height: 2;
+    font-size: 18px;
+  }
+}
+.content1{
+  width: 40%;
+  p{
+    line-height: 2;
+    font-size: 18px;
+  }
+  img{
+    width: 80px;
+    height: auto;
+  }
+}
+
+.content2 {
+  width: 60%;
+  font-family: lora;
+  margin-bottom: 70px;
+  p {
+    color: #b79956;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  img {
+    margin-top: 70px;
+    position: relative;
+  }
+}
+
+
+.p1{
+  color: #B0935A !important;
+  margin-bottom: 8px;
+}
+
+.whyUs {
+  width: 200px;
+  margin-top: 2vw;
+  display: flex;
+  border-radius: 15px;
+  padding: 10px;
+  flex-direction: column;
+  gap: 1.5vw;
+  border:1px solid rgb(255 246 240/1);
+  img{
+    width: 50px;
+    height: 50px;
+  }
+  &:hover{
+    background-color: #e8f1ff;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  }
+  h3 {
+    font-size: 20px;
+    font-family: Lora;
+  }
+  p{
+    line-height: 1.5;
+    font-size: 16px;
+  }
+}
+
+.iconItems {
+  display: flex;
+  gap: 10px;
+}
+
+
+
+.radios{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.material{
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+}
+
+.material2{
+  flex: 1;
+  h1 {
+    font-size: 36px;
+    font-family:Lora;
+  }
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
+
+  h2{
+    max-width: 480px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.277;
+  }
+
+  p{
+    max-width: 480px;
+    margin-top: 10px;
+    line-height: 28px;
+    color: RGB(73, 73, 73);
+  }
+}
+
+.material1{
+  flex: 1;
+}

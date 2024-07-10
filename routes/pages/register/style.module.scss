@@ -1,0 +1,78 @@
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    flex-wrap: wrap;
+    align-items: center;
+
+    img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    @media (max-width: 950px) {
+        flex-direction: column;
+    }
+}
+
+.container1{
+    flex: 1;
+    line-height: 1.5;
+    h1{
+        margin-bottom: 12px;
+        font-size: 36px;
+        font-family: Lora;
+    }
+
+    :global(.ant-input){
+        padding: 15px;
+        margin-top: 40px;
+        &:hover{
+            border-color: #d9d9d9;
+          }
+          &:focus{
+            border-color: #b39359;
+          }
+    }
+}
+
+.container2{
+    flex: 1;
+}
+
+.remember{
+    margin-top: 10px;
+    font-size: 14px;
+
+    .span{
+        color: #b79956;
+        text-decoration: underline;
+    }
+
+    :global(.ant-checkbox-wrapper){
+        font-size: 14px;
+    }
+}
+
+
+.buttons{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    button{
+        padding: 10px 40px 10px 40px;
+        background-color: #0b2c3d;
+        color: white;
+        border-radius: 8px;
+        &:hover{
+            background-color: #b39359;
+          }
+    }
+
+    a{
+        color: #b79956;
+    }
+}

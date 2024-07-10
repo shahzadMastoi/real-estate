@@ -1,0 +1,254 @@
+  .person {
+    text-align: center;
+    border-radius: 8px;
+    flex: 1 1 0%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  
+    div {
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  
+  .cardItems {
+    display: flex;
+    gap: 22px;
+  
+    @media (max-width: 1050px) {
+      flex-direction: column;
+    }
+  }
+  
+  
+  .tags {
+    margin-top: 150px;
+    label {
+      line-height: 1;
+      margin-right: 10px;
+      border-radius: 4px;
+      padding: 8px;
+      border: 1px solid rgb(184, 180, 180);
+      margin-bottom: 10px;
+      font-size: 12px;
+      font-weight: 300;
+    }
+  }
+  
+  
+  .item2 {
+    width: 30%;
+    min-width: 340px;
+    :global(.ant-input-affix-wrapper) {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      border: 1px solid #002a3e;
+    }
+  
+    :global(.ant-col) {
+      margin-top: 12px;
+    }
+  
+    :global(.ant-input-suffix) {
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  
+    button {
+      background: #002a3e;
+      padding: 8px 32px 8px 32px;
+      color: white;
+      border-radius: 8px;
+      font-size: 16px;
+          }
+  
+    :global(.ant-form) {
+      label {
+        font-size: 24px;
+        font-weight: 500;
+        text-decoration: underline;
+        color: #002a3e;
+      }
+    }
+
+    @media (max-width:768px) {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+
+
+  .propertyCard {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 40px;
+
+  
+    @media (max-width: 882px) {
+      padding: 2vw;
+    }
+  }
+  
+  .propertyCardItem {
+    border-radius: 8px;
+    width: 100%;
+    min-width: 300px;
+    box-shadow: 4px 1px 17px 10px #dbdbdb;
+  }
+  
+  .propertyCardChild {
+    padding-top: 22px;
+
+    width: 100%;
+    .residance{
+      @media(min-width: 1280px){
+      margin-left: 30px;
+      margin-right: 55px;
+  }
+    }
+
+    h3 {
+      font-size: 26px;
+      margin-top: 30px;
+    }
+    h4 {
+      font-size: 14px;
+      font-weight: 300;
+      margin-top: 7px;
+      margin-bottom: 7px;
+      text-decoration: underline;
+      color: #62615f;
+    }
+    span {
+      font-size: 14px;
+      line-height: 2;
+      color: #62615f;
+    }
+  
+    li {
+      border-right-width: 1px;
+      border-color: #E0DEDE;
+      color: #62615f;
+      display: flex;
+      gap: 9px;
+      padding: 10px 20px 10px 20px;
+    }
+  
+    li:last-child {
+      border: none;
+    }
+  
+    ul {
+      margin-top: 1.25rem;
+      background-color: #F4F4F4;
+    }
+  
+    @media (max-width: 1290px) and (min-width: 1162px) {
+      li {
+        padding: 0;
+      }
+    }
+  
+    @media (max-width: 860px) and (min-width: 760px) {
+      li {
+        padding: 0;
+        border: none;
+      }
+    }
+  
+    @media (max-width: 700px) {
+      li {
+        border: none;
+      }
+    }
+    @media (max-width: 375px) {
+      li {
+        padding: 0;
+        border: none;
+      }
+    }
+  }
+  
+  .propertyCardItemChild {
+    position: relative;
+  }
+  
+  .forSale {
+    position: absolute;
+    background-color: "white";
+    bottom: 16px;
+    left: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    border-radius: 2px;
+    padding: 0px 4px 0px 4px;
+  }
+  
+  .camera {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    gap: 6px;
+    padding: 5px;
+  
+    button {
+      gap: 5px;
+      border-radius: 2px;
+      padding: 2px 6px 2px 6px;
+      display: flex;
+      align-items: center;
+      color: white;
+      background: #294d62;
+      font-size: 12px;
+    }
+  }
+  .buttonchange {
+    gap: 15px;
+    display: flex;
+    button{
+      border-radius: 12px;
+      padding: 8px;
+      color: white;
+      background: #0b2c3d;
+    }
+  }
+
+  .price{
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
+  .imgTag{
+    img{
+      height: 250px;
+      width: 440px;
+    }
+  }
+
+  .antdCarousal{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow:1px 1px 5px 0px #dbdbdb;
+    font-family: Lora;
+    transform: rotate(0deg);
+     height: 100%; 
+     width: auto;
+a{
+  &:hover{
+    color: black;
+  }
+}
+.verticalCarouselWrapper {
+  display: flex;
+  flex-direction: column; 
+}
+  }

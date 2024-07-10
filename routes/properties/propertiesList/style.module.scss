@@ -1,0 +1,13 @@
+.SideBarMain {
+  gap: 50px;
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.RightSide{
+    flex-direction: row-reverse;
+}

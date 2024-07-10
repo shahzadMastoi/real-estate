@@ -1,0 +1,202 @@
+.section_2 {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
+  }
+  .section1 {
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+    // position: relative;
+    gap: 40px;
+    .contact {
+      // margin: 8rem 2rem 0px auto;
+      width: 30%;
+      h1 {
+        font-size: 4rem;
+        color: #000;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.555;
+      }
+      Button {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 6px;
+        height: 45px;
+        width: 130px;
+        color: white;
+        background: #002a3e;
+        font-size: 16px;
+      }
+      .ul {
+        ul {
+          display: flex;
+          gap: 50px;
+          span {
+            color: #b39359;
+            font-size: 32px;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+    .imgdiv {
+      background-color: #e8f1ff;
+      position: absolute;
+      left: 1000px;
+      // height: 850px;
+  
+      img {
+        // width: 100%;
+  
+      }
+    }
+  }
+  .searchdiv {
+    position: absolute;
+    top: 700px;
+    // left: 280px;
+  }
+  
+  
+    .home2header {
+      background: linear-gradient(to right,
+          rgb(255, 255, 255) 0%,
+          rgb(255, 255, 255) 55%,
+          #E8F1FF 45%,
+          #E8F1FF 100%);
+    }
+  
+    .content {
+      display: flex;
+      align-items: center;
+      height: 950px;
+  
+      @media (max-width: 1280px) {
+        height: 700px;
+      }
+  
+      @media (max-width: 1024px) {
+        height: auto;
+        flex-direction: column;
+      }
+    }
+  
+    .main1 {
+      flex: 1;
+      width: 100%;
+      max-width: 580px;
+  
+      h1 {
+        animation-name: textanimie;
+        animation-duration: 2s;
+        font-size: 68px;
+        font-weight: 500;
+        font-family: Lora;
+  
+        @media (max-width: 780px) {
+          font-size: 50px;
+        }
+  
+        @media (max-width: 570px) {
+          font-size: 36px;
+        }
+      }
+  
+      .p {
+        animation-name: textanimie;
+        animation-duration: 2s;
+        @media (max-width: 1280px) and (min-width: 1024px) {
+          width: 380px;
+        }
+      }
+  
+      button {
+        animation-name: textanimie;
+        animation-duration: 2s;
+        padding: 10px 20px;
+        background-color: #0B2C3D;
+        color: white;
+        border-radius: 8px;
+      }
+  
+      span {
+        font-size: 28px;
+        color: #B39359;
+      }
+    }
+  
+    .main2 {
+      flex: 1;
+      overflow: hidden;
+  
+      img {
+        animation-name: imganime;
+        animation-duration: 2s;
+        position: absolute;
+        min-width: 641px;
+        object-fit: cover;
+        height: 659px;
+        right: 0px;
+  
+        @media (min-width:1024px) {
+          top: 365px;
+        }
+  
+        @media (max-width: 1450px) and (min-width: 1400px) {
+          right: 2px;
+        }
+  
+        @media (max-width: 1280px) {
+          top: 142px;
+          height: auto;
+          right: 2px;
+          width: 550px;
+          min-width: 550px;
+          overflow: hidden;
+        }
+  
+  
+        @media (max-width: 1024px) {
+          position: relative;
+          width: 100%;
+          top: 0px;
+          height: auto;
+          left: 0%;
+          height: auto;
+        }
+      }
+    }
+  
+    .span {
+      gap: 50px;
+      margin-top: 50px;
+    }
+  
+    @keyframes imganime {
+      0%{
+        opacity: 0;
+        transform: translate3d(100px, 0, 0);
+      }
+      100%{
+        opacity: 1;
+        transform: none;
+      }
+    }
+    @keyframes textanimie {
+      100%{
+      opacity: 0;
+      transform: translate3d(100px, 0, 0);
+      }
+      0%{
+        opacity: 1;
+        transform: none;
+      }
+    
+    }

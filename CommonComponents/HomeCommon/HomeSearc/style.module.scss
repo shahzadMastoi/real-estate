@@ -1,0 +1,237 @@
+.searchContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+  
+  
+    @media (max-width: 1024px) {
+      position: relative;
+      left: 0;
+      top: 0;
+      background: white;
+    }
+  }
+
+  .filterIcon {
+    display: flex;
+    width: 100%;
+    .buttonColaps {
+      background: #E8F1FFFA;
+      color:#002a3e;
+      border-radius: 8px 0px 0px 8px; 
+      font-size: 22px;
+      border: 1px solid #E8F1FF;
+      padding: 10px;
+      font-family: Karla;
+      
+      svg {
+        width: 35px;
+        height: 35px;
+      }
+    }
+    .button{
+      background: #FFF6F0;
+      border: 1px solid #E8F1FF;
+      padding: 15px 39px;
+      color: #B39359;
+      border-radius: 10px; 
+      font-size: 22px;
+      font-family: Karla;
+      &:hover{
+        background-color: #002a3e;
+        color: white;
+      }
+    }
+    @media (max-width: 760px) and (min-width: 650px) {
+      width: auto;
+    }
+  }
+
+  .allFilter {
+    width: 100%;
+    background: #E8F1FFE6;
+    border-radius: 0 15px 15px 15px;
+    border: 1px solid #E8F1FF;
+    padding: 15px 10px 35px 10px;
+    @media (max-width: 1070px) {
+      padding: 20px 0px 20 0px;
+    }
+    @media (max-width: 1024px) {
+      padding: 30px;
+    }
+  
+    @media (max-width: 750px) {
+      padding: 20px 2px 20px 10px;
+    }
+  }
+
+  .filterItem {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 15px 15px 15px;
+    color: #002a3e;
+  
+    @media (min-width: 1150px) {
+      padding-right: 30px;
+    }
+    @media (min-width: 1024px) {
+      margin-top: 25px;
+    }
+  }
+
+  .filtersChild {
+    display: flex;
+  
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+  }
+
+  .locationPrnt {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    @media (max-width: 650px) {
+      flex-direction: column;
+      align-items: start;
+      padding-left: 5%;
+    }
+  
+    @media (max-width: 1024px) and (min-width: 650px) {
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+  }
+
+  .location {
+    display: flex;
+    gap: 12px;
+    flex: 1;
+    padding-left: 20px;
+    text-align: start;
+    min-width: 230px;
+    max-width: 330px;
+  
+    input {
+      width: 150px;
+      border: none;
+      outline: none;
+      background: none;
+    }
+  
+    @media (max-width: 1100px) {
+      min-width: 200px;
+      padding: 10px;
+    }
+  
+    p {
+      color: #494949;
+    }
+  
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  
+    h3 {
+      font-size: 23px;
+    }
+  
+    @media (min-width: 1024px) {
+      border-right: 1px solid #bccbe2;
+    }
+  
+    @media (max-width: 1024px) {
+      min-width: 270px;
+      width: 50%;
+    }
+    @media (max-width: 650px) {
+      margin-bottom: 45px;
+    }
+  
+    @media (max-width: 1300px) {
+      h3 {
+        font-size: 17px;
+      }
+      margin-left: 0px;
+    }
+  }
+  .appartments {
+    display: flex;
+    align-items: center;
+    svg {
+      margin-top: 0px;
+    }
+  }
+  .search {
+    background-color: #b79956;
+    padding: 20px;
+    border-radius: 8px;
+  
+    svg {
+      margin-top: 0px;
+    }
+  }
+  .filterContainer {
+    display: flex;
+    background-color: #e7efff;
+    padding: 20px;
+    border-radius: 15px 15px 0px 0px;
+    color: #002a3e;
+    width: 400px;
+    justify-content: space-around;
+    border: 1px solid white;
+    margin-left: 52px;
+    p{
+      cursor: pointer;
+      font-size: 22px;
+      font-family: Lora;
+      &:hover{
+        border-bottom: 2px solid #b79956;
+        // animation: border_anim 3s ease-in-out; (to do in next)
+      }
+    }
+    @media (max-width: 600px) {
+      width: 300px;
+      p{
+        font-size: 15px;
+      }
+    }
+  
+    @media (max-width: 600px) {
+      padding: 20px 11px 20px 10px;
+      font-size: 14px;
+      width: 220px;
+    }
+  }  
+  .home5{
+    position: relative;
+  }
+  .home2Search {
+    opacity: 1;
+    top: 90%;
+    align-items: start;
+  }
+  .home1{
+    top:90%;
+    align-items: start;
+    @media (max-width:1800px) {
+      top:100%;
+    }
+  }
+  .home4{
+    top: 65%;
+  }
+
+  @keyframes border_anim {
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 10%;
+    }
+  }

@@ -1,0 +1,141 @@
+.section1 {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .imgdiv {
+    padding: 30px;
+    background: #fffdfc;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.stat {
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+.ul {
+  padding-top: 85px;
+  padding-bottom: 85px;
+  text-align: center;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  border: 1px solid #b39359;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  span {
+    font-size: 28px;
+    color: #b39359;
+    line-height: 1.428;
+  }
+  .li {
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid #1b2d40;
+    width: 100%;
+    .lastLi {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      border-bottom: none;
+    }
+
+    @media (max-width: 1280px) {
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 1024px) {
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  @media (max-width: 1024px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: 768px) {
+    width: 230px;
+  }
+}
+
+
+.section2 {
+  display: flex;
+  gap: 50px;
+  line-height: 1.75;
+  h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 1024px) {
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.overview {
+  width: 40%;
+  font-family: Lora;
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+}
+
+.address {
+  margin-bottom: 100px;
+  p {
+    text-decoration: underline;
+  }
+  h1{
+    font-family: Lora;
+  }
+}
+
+.stars {
+  color: #b39359;
+}
+
+.phone {
+  margin-top: 50px;
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+
+.color {
+  color: #b39359;
+}
+
+.location {
+  h1 {
+    margin-bottom: 30px;
+    font-family: Lora;
+  }
+  margin-bottom: 30px;
+}

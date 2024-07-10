@@ -1,0 +1,65 @@
+.footer {
+  padding: 100px;
+  background-image: url("/footer/pattern.webp");
+  background-position: bottom center;
+  background-size: auto;
+  background-color: #eeeeee;
+}
+
+.footerItems {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 150px;
+  h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: Lora;
+  }
+
+  li{
+    color: #494949;
+    font-size: 18px;
+    margin-bottom: 12px;
+    &:hover{
+      color: #b39359;
+      cursor: pointer;
+    }
+  }
+  p {
+    color: #494949;
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  p {
+    margin-top: 20px;
+    line-height: 1.75;
+  }
+}
+.one {
+  flex: 3;
+}
+
+.two {
+  flex: 1;
+}
+
+.three {
+  flex: 1;
+}
+
+.four {
+  flex: 1;
+
+  p {
+    width: 10rem;
+  }
+}
+.icon{
+  display: flex;
+  gap: 10px;
+  svg{
+    width: 25px;
+    height: 25px;
+  }
+}

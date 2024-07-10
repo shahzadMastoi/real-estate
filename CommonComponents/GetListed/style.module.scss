@@ -1,0 +1,124 @@
+.listedMain {
+    background-color: #0b2c3d;
+    margin-top: 100px;
+  }
+ 
+  .listed {
+    display: flex;
+    justify-content: space-between;
+    height: 380px;
+    align-items: center;
+  }
+  .listedOwner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      color: white;
+      font-size: 36px;
+      font-family: Lora sans-serif;
+    }
+    p {
+      color: #b39359;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+    .inputDive{
+      display: flex;
+      flex-direction: column;
+    
+      .btndisplay{
+          padding: 8px 20px;
+          background-color: #b39359;
+          font-size: 16px;
+          font-family: Karla;
+          color: white;
+          border-radius: 10px;
+          border: none;
+          width: fit-content;
+          display: none;
+          &:hover{
+            background-color: #fff;
+             color: #0b2c3d;
+          }
+          @media (max-width:550px) {
+            display: block;
+          }
+        }
+  }
+    :global(.ant-input-affix-wrapper){
+      padding: 4px;
+      width: 55%;
+      border-color: #b39359;
+      background-color:transparent;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      &:hover{
+        border-color: #b39359;
+      }
+      &:focus-within{
+        border-color: #fff;
+      }
+      @media (max-width:780px){
+        width: 70%;
+      }
+      :global(.ant-input){
+        background: transparent;
+        color: #fff ; 
+      }
+      :global(.ant-input-suffix){
+        button {
+          padding: 12px 30px;
+          background-color: #b39359;
+          font-size: 18px;
+          font-family: Karla;
+          color: white;
+          border-radius: 10px;
+          border: none;
+          &:hover{
+            background-color: #fff;
+             color: #0b2c3d;
+          }
+          @media (max-width:780px) {
+            padding: 8px 20px;
+            font-size: 16px;
+          }
+        }
+        @media (max-width:550px) {
+          display: none;
+        }
+      }
+    }
+  }
+  
+  .imageDiv {
+    position: absolute;
+    margin-bottom: 88px;
+    right: 0;
+    img {
+      width: 100%;
+      height: auto;
+      background-size: cover;
+  
+      @media (max-width: 1100px) {
+        width: 500px;
+        object-fit: contain;
+      }
+  
+      @media (max-width: 970px) {
+        display: none;
+      }
+    }
+  
+    @media (max-width: 1100px) {
+      margin-bottom: -46px;
+    }
+  }
+  
+
+   .inputcls ::placeholder{
+    color: #fff;
+    opacity: 70%;
+    font-size: 16px;
+     }
+  

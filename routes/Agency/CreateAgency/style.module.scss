@@ -1,0 +1,157 @@
+.cardStyle {
+  width: 32%;
+  min-width: 275px;
+  background-color: #e9f1ff;
+  border-radius: 10px;
+  padding: 35px;
+  h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #b39359;
+    margin-top: 15px;
+  }
+  p{
+    font-family: Lora;
+  }
+  ul {
+    margin-top: 15px;
+    border-top: 1px solid black;
+    padding-top: 20px;
+  }
+
+  @media (max-width: 1024px) and (min-width: 550px) {
+    width: 48%;
+    min-width: 200px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 550px) {
+    width: 100%;
+    min-width: 200px;
+    margin-bottom: 30px;
+  }
+}
+
+.btnCon{
+  margin-bottom: 15px;
+ .Button{
+    border-radius: 8px;
+    margin-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    &:hover{
+      background-color: #b39359;
+    }
+  }
+}
+
+
+.card2 {
+  height: 500px;
+  width: 400px;
+  background-color: #0b2c3d;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 35px;
+  color: white;
+  h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  ul {
+    margin-top: 15px;
+    border-top: 1px solid #E0E0E0;
+    padding-top: 20px;
+  }
+}
+
+.selectpakege {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Lora;
+  p {
+    color: #b39359;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .innerdiv {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    :global(.ant-switch){
+    background-color: #0b2c3d;
+    padding: 16px;
+    }
+    :global(.ant-switch.ant-switch-checked){
+      background-color: #b39359;
+    }
+
+    :global(.ant-switch-handle){
+      top: 7px;
+    inset-inline-start: 10px;
+    }
+
+    :global(.ant-switch.ant-switch-checked .ant-switch-handle){
+      inset-inline-start: calc(100% - 28px);
+    }
+  }
+  .switch {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.cardParent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.antdform {
+  :global(.ant-input) {
+    padding: 15px;
+    border: 1px solid rgb(10, 40, 54 , 0.7);  
+    font-family:Karla;
+    &:focus{
+      border:2px solid #b39359;
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
+    }
+  }
+
+  :global(.ant-input::placeholder) {
+    color: rgba(29, 29, 29, 0.6);
+    font-weight: 300;
+    font-family: Karla;
+  }
+
+  :global(.ant-row) {
+    label {
+      font-size: 20px;
+      font-weight: 500;
+      margin-left: 5px;
+    }
+  }
+}
+
+
+.addproperty {
+  margin-bottom: 40px;
+  button {
+    background-color: #0b2c3d;
+    color: white;
+    border-radius: 8px;
+    padding: 15px 40px 15px 40px;
+    &:hover{
+      background-color: #b39359;
+    }
+  }
+}

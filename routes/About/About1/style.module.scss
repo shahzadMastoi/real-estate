@@ -1,0 +1,173 @@
+.aboutsec {
+  height: 500px;
+  background-color: #e9f1ff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  h2 {
+    font-family: Lora;
+    font-size: 78px;
+    font-weight: 500;
+  }
+  span {
+    color: #b39359;
+    font-size: 18px;
+  }
+}
+.explaination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+  p {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+.para {
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .aboutsec {
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+  
+  .explaination {
+    h2 {
+      font-size: 40px;
+    }
+    p {
+      margin-top: 5px;
+      font-size: 13px;
+    }
+  }}
+  .section1 {
+    height: 200px;
+    position: relative;
+    img {
+      max-width: 90%;
+      position: absolute;
+      top: -50px;
+    }
+  }
+  .para {
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .section1 {
+    height: 200px;
+    position: relative;
+    img {
+      max-width: 60%;
+      position: absolute;
+      top: -50px;
+    }
+  }
+  .section2 {
+    h2 {
+      font-size: 30px;
+    }
+  }
+  .section4 {
+    .Card {
+      width: 255px ;
+    }
+  }
+}
+
+@media (max-width: 639xp) {
+  .section4 {
+    .Card {
+      width: 230px !important;
+    }
+  }
+}
+@media (width: 425px) {
+  .para {
+    // margin: 0px 18px !important;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section1 {
+    height: 200px;
+    position: relative;
+    img {
+      max-width: 60%;
+      position: absolute;
+      top: -50px;
+    }
+  }
+}
+
+.section1 {
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-size: cover;
+  position: relative;
+  img {
+    max-width: 90%;
+    display: flex;
+    margin: 0 auto;
+    position: absolute;
+    top: -150px;
+  }
+}
+.section2 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 150px;
+  h2 {
+    font-size: 40px;
+  }
+}
+.history {
+  text-align: center;
+  max-width: 833px;
+  font-family: Lora;
+}
+.stat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  h2 {
+    color: #b39359;
+  }
+}
+
+.content {
+  display: flex;
+
+  @media (max-width: 1024px) {
+    flex-wrap: wrap;
+  }
+}
+
+.content1 {
+  width: 50pc;
+  padding: 0px 12vw 0px 5vw;
+}
+
+.content2 {
+  width: 50pc;
+  padding: 0px 2vw 0px 11vw;
+  margin-bottom: 70px;
+
+  img {
+    margin-top: 70px;
+  }
+}

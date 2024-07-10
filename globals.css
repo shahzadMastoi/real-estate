@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* styles/globals.css */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Your custom styles can go here */
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.lora {
+  font-family: Lora, sans-serif;
+}
+.karla {
+  font-family: Karla, sans-serif;
+}
+body {
+  font-family: "Karla";
+}
+
+.karla {
+  font-family: "Karla";
+}
+
+.sens {
+  font-family: sans-serif;
+}
+
+.lor {
+  font-family: "Lora";
+}
+
+.container {
+  /* width: 1200px; */
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 570px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 990px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}

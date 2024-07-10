@@ -1,0 +1,138 @@
+.expertMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    @media (max-width: 992px) {
+      flex-direction: column;
+      // .intro{
+      //   width: 100%;
+      // }
+    }
+    .intro {
+      width: 20%;
+      @media (max-width:992px) {
+        width: 100%;
+      }
+      span {
+        color: #b39359;
+      }
+      h1 {
+        font-size: 38px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+        font-family: Lora;
+      }
+      p {
+        margin-bottom: 30px;
+        line-height: 1.99;
+      }
+    }
+    .hero {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 35px;
+     
+      .cardDiv{
+        position: relative;
+      }
+      .icons{
+        position: absolute;
+        top: 30px;
+        display: none;
+        li{
+          width: 25px;
+          height: 25px;
+          background-color: #fff;
+          margin-top: 9px;
+          margin-left: 10px;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+         
+      }
+      }
+      .innerCard {
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #fffdfc;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        border-bottom: 6px solid #0b2c3d;
+        border-radius: 0px 0px 6px 6px;
+        h1 {
+          font-size: 22px;
+          font-family: Lora;
+        }
+      }
+      a:hover {
+        .icons{
+          display: block;
+          li {
+            animation: slideIn 1s forwards; 
+            opacity: 1; 
+            &:nth-child(2) {
+              animation-delay: 3s forwards; 
+            }
+            &:nth-child(3) {
+              animation-delay: 5s forwards;
+            }
+          }
+         
+        }
+        .innerCard {
+          border-bottom: 6px solid #b39359;
+        }
+        h1 {
+          color: #b39359;
+        }
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    .hero {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0px;
+      .cardDiv {
+        width: 200px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .hero {
+      .cardDiv {
+        width: 280px;
+      }
+    }
+  }
+  @media (max-width: 425px) {
+    .hero {
+      .cardDiv {
+        width: 350px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,160 @@
+.properties {
+  padding-top: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+  margin-bottom: 40px;
+}
+
+.propertySearch {
+  display: flex;
+  gap: 30px;
+
+  img {
+    object-fit: cover;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.imgContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+}
+
+.setImages {
+  img {
+    object-fit: cover;
+    height: 90%;
+    border-radius: 8px;
+    width: 100%;
+  }
+}
+
+.imageGrid {
+  display: grid;
+  gap: 30px;
+
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.specificImage {
+  width: 70% !important;
+}
+
+.lastimage {
+  margin-left: -87px;
+}
+
+.Amenities {
+  margin-top: 50px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.attributesItems {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  gap: 10px;
+  width: 30%;
+  min-width: fit-content;
+}
+
+.propsStyle{
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  gap: 10px;
+  width: 40%;
+  min-width: 178px;
+
+  @media (max-width:1024px) {
+    width: 47%;
+  }
+}
+
+.cardItems {
+  display: flex;
+  gap: 22px;
+
+  @media (max-width: 1050px) {
+    flex-direction: column;
+  }
+}
+
+.floorPlan {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 70px;
+}
+
+.flooritem {
+  display: flex;
+  gap: 40px;
+  @media (max-width:800px) {
+    flex-direction: column;
+  }
+}
+
+
+// .container {
+//   display: flex;
+//   gap: 50px;
+// }
+
+.item1 {
+  width: 100%;
+}
+
+
+
+.feedback{
+  img{
+    border-radius: 26px;
+  }
+}
+
+
+.form2{
+  margin-top: 100px;
+  :global(.ant-input){
+    padding: 15px;
+    border: 1px solid #002a3e;
+  }
+
+  button{
+    background-color: #002a3e;
+    border-radius: 8px;
+    padding: 13px 45px 13px 45px;
+    color: white;
+  }
+}
+
+.prgrph{
+  @media (min-width: 1024px) {
+    margin-left: -50px;
+    width: 30%;
+  }
+
+  @media (max-width:1024px) {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,125 @@
+
+.bgDotedPic{
+  position: relative;
+  // margin-top: 200px;
+  .imageInbackground{
+    position: relative;
+    z-index: -1;
+    top: 67px;
+  }
+  
+}
+.testimonial {
+    display: flex;
+    background: #F5F9F8;
+    border-radius: 30px;
+    align-items: center;
+    height: 400px;
+    top: -100px;
+  }
+  .imgDiv {
+    background-color: #0B2C3D;
+    position: absolute;
+    margin-left: 11%;
+    border-radius: 30px;
+    img{
+      transition: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 1000ms;
+      transform: translate(0,0px) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+    }
+    @media (max-width: 1200px) {
+      position: relative;
+    }
+  }
+  .content2 {
+    position: relative;
+    width: 50%;
+    left: 53%;
+    padding: 30px 60px 30px 0px;
+    z-index: 3;
+    max-width: 470px;
+    h2 {
+      font-size: 40px;
+      font-weight: 500;
+      font-family: Lora;
+      margin-bottom: 15px;
+      @media (max-width: 1200px) {
+        font-size: 24px;
+      }
+      @media (max-width: 760px) {
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+    }
+    @media (max-width: 1200px) {
+      width: 500px;
+      background-color: white;
+      border-radius: 15px;
+      position: absolute;
+      left: 28%;
+      top: 51%;
+      padding: 30px 20px 30px 10px;
+    }
+    @media (max-width: 988px) {
+      top: 50%;
+      left: 25%;
+    }
+    @media (max-width: 760px) {
+      left: 22%;
+      top: 320px;
+      width: 78%;
+      padding: 4px 25px 9px 25px;
+    }
+    @media (max-width: 500px) {
+      width: 80%;
+      left: 12%;
+      padding: 5;
+      top: 283px;
+    }
+.icon{
+  svg {
+    position: absolute;
+    right: 29px;
+    height: 60px;
+    width: 60px;
+    color: #E1EDEA;
+  }
+}
+  }
+  .color {
+    color: #B39359;
+    font-size: 16px;
+    line-height: 1.75;
+    margin-top: 20px;
+    svg{
+      width: 10px;
+      height: 10px;
+      color: #B39359;
+    }
+    @media (max-width: 760px) {
+      margin-top: 5px;
+    }
+  }
+  .btn {
+    position: relative;
+    top: -72px;
+    left: 9px;
+    svg {
+      color: #0B2C3D;
+      padding: 5px;
+      height: 50px;
+      width: 50px;
+      border-radius: 15px;
+      &:hover{
+        color: #B39359;
+      }
+      @media (max-width: 1200px) {
+        color: #B39359;
+        z-index: 4;
+      }
+      @media (max-width:500px) {
+        display: none;
+      }
+    }
+  }

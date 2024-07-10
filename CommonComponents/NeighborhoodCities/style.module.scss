@@ -1,0 +1,67 @@
+.imageSwap {
+    margin-top: 250px;
+    margin-bottom: 100px;
+    position: relative;
+    :global(.react-multi-carousel-list){
+      ul{
+       column-gap: 5px;
+       button:hover{
+        background: #b39359;
+       }
+      }
+      :global(.react-multi-carousel-dot--active button){
+        background-color: #b39359;
+      }
+     }
+  }
+  .logoText {
+    text-align: center;
+    font-family: Lora;
+    p {
+      font-size: 16px;
+      color: #b39359;
+    }
+    h1 {
+      margin-top: 10px;
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+  }
+  .slider {
+    margin-bottom: 50px;
+    &:hover {
+      .modals {
+        visibility: visible;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: all;
+        transition: duration 500px;
+      }
+    }
+  
+    @media (max-width: 350px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .modals {
+    visibility: hidden;
+    position: absolute;
+    background-color: #fffdfce6;
+    color: #494949;
+    font-size: 16px;
+    font-family: Karla;
+    padding: 13px 75px;
+    border-radius: 8px;
+    top: 280px;
+    left: 30px;
+    h2 {
+      color: #0b2c3d;
+      font-size: 18px;
+      font-family: Lora;
+    }
+    span {
+      color: #b39359;
+      font-size: 14px;
+      font-family: Karla;
+    }
+  }

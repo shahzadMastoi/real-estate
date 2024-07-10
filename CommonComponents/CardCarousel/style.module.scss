@@ -1,0 +1,30 @@
+.cardCarousel{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #E8F1FF;
+    gap: 20px;
+    margin-right: 10px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    width: 100%;
+}
+
+
+.cardCarouselContainer{
+    position: relative;
+    bottom: 120px;
+
+    :global(.react-multi-carousel-item--active){
+     margin-right: 10px;   
+    }
+}
+.shortDetail{
+    font-family: Lora;
+    h3{
+        font-size: 24px;
+    }
+    span{
+        color: #b39359;
+    }
+}

@@ -1,0 +1,41 @@
+.logoSection {
+    display: flex;
+    flex-direction: column;
+    // overflow-x: scroll;
+    margin-top: 100px;
+    gap: 40px;
+    // overflow: hidden;
+    z-index: 1;
+    // flex-wrap: wrap;
+    text-align: center;
+    font-family: Lora;
+  
+    h1 {
+      font-size: 36px;
+      color: #002a3e;
+    }
+  
+    p {
+      color: #d5a45b;
+    }
+  
+    @media (max-width: 350px) {
+      text-align: start;
+      gap: 15px;
+  
+      h1 {
+        font-size: 20px;
+      }
+    }
+  }
+  .logos {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 6vw;
+    overflow: hidden;
+  }
+  .logoSection::-webkit-scrollbar {
+    display: none;
+  }
